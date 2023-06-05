@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html style="background-color: black;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .is-horizontal-center {
+            justify-content: center;
+        }
+        * {
+            font-family: Inter;
+        }
 
+        button span {
+            font-size: 16px;
+        }
+
+        button {
+            border: 1px solid white;
+        }
+        
+    </style>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered is-mobile" style="margin-top: 10px;">
+        <figure class="image" style="width: 80px;">
+            <img src="https://chainlight.io/logo_black.svg">
+        </figure>
+      </div>
+      <div class="columns is-centered is-mobile" style="margin-top: 16px;">
+        <div style="font-size: 20px; font-weight: bold; font-family: Inter">
+            ChainLight
+        </div>
+      </div>
+      <div class="columns is-centered is-mobile" style="margin-top: 16px; padding-left: 5px; padding-right: 5px;">
+        <div style="font-size: 16px; font-weight: bold; font-family: Inter; text-align: center;">
+            🏆 2022 Paradigm CTF Winner 🏆<br>
+            🏆 2023 Ingonyama ZK CTF Winner 🏆
+        </div>
+      </div>
+      <div class="columns is-centered is-mobile" style="margin-top: 16px;">
+        <div style="font-size: 14px; font-family: Inter; text-align: center;">
+            We are dedicated to being your trusted partner,<br>
+            providing unparalleled expertise and support to<br>
+            ensure the security and reliability of your<br>
+            blockchain-based solutions.
+        </div>
+      </div>
+      <div class="columns" style="margin-top: 16px;">
+        <div class="column">
+            <a href="https://chainlight.io/#f=b" target="_blank">
+                <button style="" class="button is-dark is-medium is-fullwidth">
+                <span class="icon">
+                    <i class="fa fa-home"></i>
+                  </span>
+                  <span>ChainLight Website</span>
+            </button></a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+            <a href="https://relicprotocol.com/#f=2" target="_blank">
+                <button class="button is-dark is-medium is-fullwidth">
+                  <span>Trustless ZK Oracle - Relic Protocol</span>
+            </button></a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+            <a id="tg_link" href="https://t.me/chainlight" target="_blank">
+                <button class="button is-link-dark is-medium is-fullwidth">
+                <span class="icon">
+                    <i class="fab fa-telegram"></i>
+                  </span>
+                  <span id="tg_text">@chainlight</span>
+            </button></a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+            <a href="https://twitter.com/chainlight_io" target="_blank">
+                <button class="button is-link-dark is-medium is-fullwidth">
+                <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>@chainlight_io</span>
+            </button></a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+            <a href="https://chainlight.io/theori.pdf" target="_blank">
+                <button class="button is-dark is-medium is-fullwidth">
+                <span class="icon">
+                    <i class="fa fa-building"></i>
+                  </span>
+                  <span>Company (Theori) Profile</span>
+            </button></a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+            <a href="https://meet.chainlight.io/" target="_blank">
+                <button class="button is-dark is-medium is-fullwidth">
+                <span class="icon">
+                    <i class="fa fa-phone"></i>
+                  </span>
+                  <span>Book a Meeting</span>
+            </button></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <script>
+    const telegramHandle = (new URLSearchParams(location.search)).get("tghandle") || "chainlight"
+    tg_link.href = "https://t.me/" + telegramHandle
+    tg_text.innerText = "@" + telegramHandle
+  </script>
+  </body>
+</html>
